@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+  background-color: #000e1e;
+  height: 100vh;
+  color: white;
+  display: flex;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+}
+
+.logoBox {
+  padding-top: 10px;
+}
+
+.logo {
+  margin: 10px;
+}
+
+.small-asset {
+  width: 200px;
+  height: 50px;
+}
+
+.red-text {
+  margin-top: 0px;
+  color: red;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.primaryColor {
+  color: #e02aff;
+}
+
+.secondaryColor {
+  color: rgb(184, 65, 184);
+}
+
+.mainForm {
+  margin: 20px auto;
+}
+
+.mainForm input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.mainButton {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  border: 1px solid #e02aff;
+  outline: none;
+  background-color: #e02aff;
+  color: white;
+  font-weight: 900;
+  margin-left: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mainButton:hover {
+  background-color: #8f14d2;
+}
+
+.secondaryButton {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  border: 1px solid #e02aff;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 900;
+  margin-left: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.secondaryButton:hover {
+  background-color: rgba(184, 65, 184, 0.339);
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: #b7aeb9;
+  border-color: #b7aeb9;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.loading-spinner {
+  display: inline-block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-top-color: #e02aff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.response {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  max-width: 700px;
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+.image-box {
+  margin: auto;
+}
+
+.chat-line {
+  margin: 10px 0;
+  white-space: pre-wrap;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+@media screen and (max-width: 600px) {
+  .mainForm input {
+    width: auto;
+  }
+}
