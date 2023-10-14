@@ -21,9 +21,11 @@ export async function POST(req: Request, res: Response) {
         input: { 
           url: url, 
           prompt: prompt,
-          qr_conditioning_scale: 1,
-          num_inference_steps: 20,
-          guidance_scale: 9,
+          qr_conditioning_scale: 2,
+          num_inference_steps: 30,
+          guidance_scale: 5,
+          negative_prompt:
+          'Longbody, lowres, bad anatomy, bad hands, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, blurry',
           },
       }),
     });

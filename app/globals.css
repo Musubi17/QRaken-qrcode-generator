@@ -8,16 +8,30 @@ body {
 }
 
 .App {
-  text-align: center;
-  background-color: #000e1e;
-  height: 100vh;
-  color: white;
   display: flex;
-  margin: 0;
+  text-align: left;
+  background-color: #ffffff;
+  height: 100vh;
+  color: rgb(5, 4, 4);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.Main {
+  display: flex;
+}
+
+.small-containers-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%; /* Assuming you want this group to take up the remaining 30% of the parent's width */
+  gap: 10px;  /* Space between the small containers */
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   max-width: 920px;
   margin: auto;
 }
@@ -45,11 +59,11 @@ h1 {
 }
 
 .primaryColor {
-  color: #e02aff;
+  color: #000000;
 }
 
 .secondaryColor {
-  color: rgb(184, 65, 184);
+  color: rgb(0, 0, 0);
 }
 
 .mainForm {
@@ -57,22 +71,23 @@ h1 {
 }
 
 .mainForm input {
-  width: 100%;
+  margin-bottom: 30px;
+  width: 120%;
   max-width: 400px;
   padding: 10px 20px;
-  border-radius: 100px;
-  border: 1px solid white;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
   outline: none;
 }
 
 .mainButton {
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 1rem;
   border: 1px solid #e02aff;
   outline: none;
   background-color: #e02aff;
-  color: white;
+  color: rgb(255, 0, 0);
   font-weight: 900;
   margin-left: 10px;
   cursor: pointer;
@@ -80,25 +95,27 @@ h1 {
 }
 
 .mainButton:hover {
-  background-color: #8f14d2;
+  background-color: #000000;
 }
 
 .secondaryButton {
+  float: left;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 1rem;
-  border: 1px solid #e02aff;
+  border: 1px solid #000000;
   outline: none;
-  background-color: transparent;
-  color: white;
-  font-weight: 900;
-  margin-left: 10px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-left: 0px;
+  margin-top: 5px;
   cursor: pointer;
   text-transform: uppercase;
 }
 
 .secondaryButton:hover {
-  background-color: rgba(184, 65, 184, 0.339);
+  background-color: rgb(0, 0, 0);
 }
 
 button:disabled,
@@ -117,7 +134,7 @@ button:disabled:hover {
   height: 50px;
   border: 5px solid #fff;
   border-radius: 50%;
-  border-top-color: #e02aff;
+  border-top-color: #000000;
   animation: spin 1s ease-in-out infinite;
   -webkit-animation: spin 1s ease-in-out infinite;
 }
@@ -135,20 +152,25 @@ button:disabled:hover {
 }
 
 .response {
+  float: right;
   display: flex;
   flex-direction: column;
-  height: 60vh;
-  max-width: 700px;
-  margin: auto;
+  height: 68vh;
+  width: 500px;
+  max-width: 500px;
+  margin: 0px;
+  margin-bottom: 50px;
+  margin-right: -80px;
   text-align: left;
   padding: 10px;
-  border: 1px solid white;
-  border-radius: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
   overflow: auto;
 }
 
 .image-box {
-  margin: auto;
+  margin-top: 100px;
+  margin: 0;
 }
 
 .chat-line {
@@ -165,3 +187,4 @@ button:disabled:hover {
     width: auto;
   }
 }
+

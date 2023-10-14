@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Qronos-Code',
+  title: '...Qronos-Code',
   description: 'Template code for the Codebender AI Project',
 }
 
